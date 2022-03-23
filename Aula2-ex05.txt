@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c, delta, raiz1, raiz2;
+
+    cout << "Digite o valor de A: ";
+    cin >> a;
+    cout << "Digite o valor de B: ";
+    cin >> b;
+    cout << "Digite o valor de C: ";
+    cin >> c;
+
+    delta = (b*2) - (4 *a *c);
+
+    cout << "O valor de delta eh " << delta << endl;
+
+    raiz1 = (-b) + (sqrt(delta)) / (2*a);
+    raiz2 = (-b) - (sqrt(delta)) / (2*a);
+
+    cout << raiz1 << endl;
+    cout << raiz2 << endl;
+
+}

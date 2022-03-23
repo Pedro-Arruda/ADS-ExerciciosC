@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n1,n2,n3;
+    cout << "Digite 3 valores: " << endl;
+    cin >> n1;
+    cin >> n2;
+    cin >> n3;
+    if (n1 < n2+n3 &&  n2 < n1+n3 && n3 < n2+n1){
+        if (n1 == n2 && n2 == n3) {
+            cout << "O triangulo eh equilatero";
+
+        }if (n1 != n2 && n2 != n3 && n3 != n1){
+            cout << "O triangulo eh escaleno";
+
+        }if (n1 == n2 && n2 != n3 || n2 == n3 && n1 != n2 || n3 == n1 && n3 != n2) {
+            cout << "O triangulo eh isosceles";
+        }
+    }else {
+        cout << "Os valores nao formam um triangulo";
+    }
+}

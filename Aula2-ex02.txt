@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1,n2;
+    cout << "Digite 2 numeros: " << endl;
+    cin >> n1;
+    cin >> n2;
+    if (n1 > n2) {
+        cout << n1 << " eh maior que " << n2;
+    }else
+        cout << n2 << " eh maior que " << n1;
+
+}
