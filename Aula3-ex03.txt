@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, soma_geral, i;
+    soma_geral = 0;
+    cout << "Digite 10 valores: " << endl;
+    for (i = 0; i <= 9; i++) {
+        cin >> n;
+        soma_geral += n;
+    }
+    cout << soma_geral;
+}

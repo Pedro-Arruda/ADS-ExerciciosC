@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int contador, n, maior_valor, i;
+    contador = 2;
+    maior_valor = 0;
+    n = 0;
+
+    for (i = 1; i <= contador; i++) {
+
+        cout << "Digite um valor: ";
+        cin >> n;
+        if (maior_valor < n) {
+            maior_valor = n;
+        }
+    }
+    cout << maior_valor;
+
+}
