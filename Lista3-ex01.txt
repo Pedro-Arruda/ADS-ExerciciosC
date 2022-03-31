@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float x, valor_total, valor_divisao, divisor;
+    valor_total = 0;
+    cout << "Digite o valor de x: ";
+    cin >> x;
+
+    for (divisor = 1; divisor <= 20; divisor++) {
+        valor_divisao = x/divisor;
+        valor_total = valor_total + valor_divisao;
+        cout << valor_divisao << endl;
+    }
+
+    cout << "S equivale a "  << valor_total;
+}

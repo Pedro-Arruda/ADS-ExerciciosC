@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numero_impar, soma_geral;
+    soma_geral = 0;
+    for (numero_impar = 0; numero_impar <= 499; numero_impar++) {
+        numero_impar += 1;
+        soma_geral += numero_impar;
+    }
+    cout << "O valor da soma dos numeros impares entre 0 e 500 eh " << soma_geral;
+}

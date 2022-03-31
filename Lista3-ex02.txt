@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int fulano, ciclano, qtd_anos;
+    fulano = 150;
+    ciclano = 110;
+    qtd_anos = 0;
+    while (fulano > ciclano) {
+
+        fulano += 2;
+        ciclano += 3;
+        qtd_anos +=1;
+
+    }
+    cout << "Sera necessario " << qtd_anos << " de anos";
+}
