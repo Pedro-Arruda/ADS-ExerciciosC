@@ -4,25 +4,22 @@ using namespace std;
 
 int main()
 {
-    char nome_1[20], nome_2[20], nome_3[20];
-    float nota_1, nota_2, nota_3;
+    int quant_pc1, quant_pc2, quant_pc3;
+    cout << "Computador1" << "\t" << "R$2000,00" <<endl;
+    cout <<  "Computador2" << "\t" << "R$3000,00" <<endl;
+    cout <<  "Computador3" << "\t" << "R$2700,00" <<endl;
 
-    cout << "Digite o nome do primeiro aluno: " <<endl;
-    cin >> nome_1;
-    cout << "Digite a nota do primeiro aluno: " <<endl;
-    cin >> nota_1;
+    cout << "Quantidades de computadores1: ";
+    cin >> quant_pc1;
+    cout << "Quantidades de computadores2: ";
 
-    cout << "Digite o nome do segundo aluno: " <<endl;
-    cin >> nome_2;
-    cout << "Digite a nota do segundo aluno: " <<endl;
-    cin >> nota_2;
+    cin >> quant_pc2;
+    cout << "Quantidades de computadores3: ";
 
-    cout << "Digite o nome do terceiro aluno: " <<endl;
-    cin >> nome_3;
-    cout << "Digite a nota do terceiro aluno: " <<endl;
-    cin >> nota_3;
+    cin >> quant_pc3;
 
-    cout << nome_1 << "\t" << nota_1 <<endl;
-    cout << nome_2 << "\t" << nota_2 <<endl;
-    cout << nome_3 << "\t" << nota_3 <<endl;
+    cout << "Computador1" << "\t" << "R$2000,00" << "\t" << quant_pc1 << "\t" << "R$"<<quant_pc1 * 2000 <<endl;
+    cout << "Computador2" << "\t" << "R$3000,00" << "\t" << quant_pc2 << "\t" << "R$"<<quant_pc2 * 3000 <<endl;
+    cout << "Computador3" << "\t" << "R$2700,00" << "\t" << quant_pc3 << "\t" << "R$" << quant_pc3 * 2700 <<endl;
+
 }

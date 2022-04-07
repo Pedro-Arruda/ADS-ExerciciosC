@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i,k;
+    float soma_fatorial, soma_geral;
+
+    i = 0;
+    soma_geral= 1;
+    k = 0;
+    soma_fatorial = 1;
+
+
+    cout << "Digite um valor: ";
+    cin >> n;
+
+    for (i = 1; i <=n; i++) {
+        for (k = 1; k <= i; k++)
+            if (k == i) {
+                soma_geral += 1/soma_fatorial;
+            }
+            soma_fatorial = soma_fatorial *k;
+        }
+        cout << "A soma da expressao eh " << soma_geral;
+}

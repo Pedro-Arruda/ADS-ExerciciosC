@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, n;
+    bool triangulo;
+
+    i = 0;
+    triangulo = false;
+
+    cout << "Digite um valor: ";
+    cin >> n;
+
+    for (i = 1; i <= n; i++) {
+        if (i * (i+1) * (i-1) == n) {
+            cout << "O numero eh triangular";
+            triangulo = true;
+            break;
+        }
+    }
+
+    if (triangulo == false) {
+        cout << "O numero nao eh triangular";
+    }
+}
