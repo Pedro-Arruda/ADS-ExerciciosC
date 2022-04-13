@@ -11,8 +11,7 @@ int main()
 
     for (divisor = 1; divisor <= 20; divisor++) {
         valor_divisao = x/divisor;
-        valor_total = valor_total + valor_divisao;
-        cout << valor_divisao << endl;
+        valor_total += valor_divisao;
     }
 
     cout << "S equivale a "  << valor_total;

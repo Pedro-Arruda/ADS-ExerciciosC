@@ -5,20 +5,30 @@ using namespace std;
 
 main()
 {
-    int n1, n2, n3, n4, Media;
+    float n1, n2, n3, peso1, peso2, peso3, somaPesos, Media;
 
-    cout << "Digite o primeiro numero: ";
+    cout << "Digite a primeira nota: ";
     cin >> n1;
-    cout << "Digite o segundo numero: ";
-    cin >> n2;
-    cout << "Digite o terceiro numero: ";
-    cin >> n3;
-    cout << "Digite o quarto numero: ";
-    cin >> n4;
+    cout << "Digite o peso da nota: ";
+    cin >> peso1;
 
-    Media = (n1 + n2 + n3 + n4) / 4;
+    cout << "Digite a segunda nota: ";
+    cin >> n2;
+    cout << "Digite o peso da nota: ";
+    cin >> peso2;
+
+    cout << "Digite a terceira nota: ";
+    cin >> n3;
+    cout << "Digite o peso da nota: ";
+    cin >> peso3;
+
+    n1 *= peso1;
+    n2 *= peso2;
+    n3 *= peso3;
+    somaPesos = peso1 + peso2 + peso3;
+    
+    Media = (n1 + n2  + n3) / somaPesos;
 
     cout << "A media dos numeros eh " << Media;
-
 }
 

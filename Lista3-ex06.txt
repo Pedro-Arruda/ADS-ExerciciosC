@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float x, potencia, k, soma;
+
+    cout << "Digite um valor: ";
+    cin >> x;
+
+    potencia = x;
+    soma = 1;
+    k = 1;
+
+    for (int divisor = 1; divisor <= 15; divisor++) {
+        while (k <= divisor) {
+            potencia *= x;
+            k+= 1;
+        }
+
+        soma += potencia/divisor;
+    }
+    cout << soma << endl;
+}

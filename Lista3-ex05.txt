@@ -23,5 +23,5 @@ int main()
             }
             soma_fatorial = soma_fatorial *k;
         }
-        cout << "A soma da expressao eh " << soma_geral;
+    cout << "A soma da expressao eh " << soma_geral;
 }

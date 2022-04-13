@@ -4,13 +4,16 @@ using namespace std;
 
 int main()
 {
-    int n, i;
+    int n, i, soma;
     i = 0;
 
     cout << "Digite um numero: " << endl;
     cin >> n;
 
+    soma = 0;
+
     for (i = 1; i <= n; i++) {
-        cout << i << endl;
+        soma += i;
     }
+    cout << soma;
 }
